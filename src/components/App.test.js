@@ -12,9 +12,7 @@ describe('App', () => {
         expect(app).toMatchSnapshot()
     })
 
-    it('contains a connected Wallet component', () => {
-        console.log(app.debug());
-        
+    it('contains a connected Wallet component', () => {        
         expect(app.find('Connect(Wallet)').exists()).toBeTruthy()
     })
 })
